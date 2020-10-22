@@ -6,16 +6,13 @@ function selection(src,event)
 end
 
 function plotstuff (k)
-  step = 10;
+  step = 5;
   clf;
   for x = 0:step:255
     for y = 0:step:255
       z = 3*k-x-y;
       if z>=0 && z<=255
         plot3 (x, y, z, 'o', 'Color',[x/255 y/255 z/255]);
-        hold on;
-      else
-        plot3 (x, y, z, 'o', 'Color',[0 0 0]);
         hold on;
       end
       hold on;
@@ -29,6 +26,9 @@ function plotstuff (k)
   xlim([0 255]);
   ylim([0 255]);
   zlim([0 255]);
+  set(gca, 'xcolor', "red");
+  set(gca, 'ycolor', "green");
+  set(gca, 'zcolor', "blue");
   slider = uicontrol (                   ...
            "style", "slider",                ...
            "Units", "normalized",            ...
@@ -40,4 +40,4 @@ function plotstuff (k)
        );
 end
 
-plotstuff(10);
+plotstuff(20);
