@@ -1,7 +1,7 @@
 ﻿# The color finisher
 > A quick and dirty way to see if 2 colors can be distinguish in grayscale
 
-![ThisIsIt](https://github.com/MaximeAeva/Couleur/blob/master/res/hello.JPG)
+![ThisIsIt](https://github.com/MaximeAeva/Couleur/tree/master/res/hello.JPG)
 
 ## Installation
 Windows:
